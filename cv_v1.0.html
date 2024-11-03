@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - NOMBRE APELLIDOS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+            font-family: 'Arial', sans-serif;
+            background-image: url('./fondo.jpg');
+            background-size: cover;
+            /* Hace que la imagen cubra todo el fondo */
+            background-position: center;
+            /* Centra la imagen */
+            /*background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed;
+            position: relative;
+            z-index: 1;
+
+        }
+
+        /* Capa translúcida */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.85); /* rgba(0, 0, 0, 0.5);*/
+            /* Color negro con 50% de opacidad */
+            z-index: -1;
+            /* Coloca esta capa detrás del contenido */
+        }
+
+        .container {
+            max-width: 900px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 2;
+            /* Asegura que el contenido esté sobre la capa translúcida */
+        }
+
+        h1 {
+            color: #007bff;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+
+        .card-body {
+            /* background-color: #f7f9fc;
+            padding: 20px; */
+            background-color: rgba(255, 255, 255, 0.85);
+            /* Fondo blanco translúcido para las tarjetas */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Curriculum Vitae</h1>
+
+        <!-- Datos Personales -->
+        <div class="card">
+            <div class="card-header">Datos Personales</div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li><strong>Apellidos: </strong>Fernández Carracedo</li>
+                    <li><strong>Nombre: </strong>Germán</li>
+                    <li><strong>Email: </strong> <a href="mailto:german.carracedo@gmail.com">german.carracedo@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Datos Académicos -->
+        <div class="card">
+            <div class="card-header">Datos Académicos</div>
+            <div class="card-body">
+                <ol>
+                    <li>Actualidad (2024): Estudiando 2º Curso del Ciclo Formativo de Grado Superior en Desarrollo de
+                        Aplicaciones Web en el IES Luis Vives de Leganés (Madrid).</li>
+                    <li>Hasta tercer curso de Estudios Universitarios de Ingeniería Técnica en Informática de Gestión en
+                        la Universidad Politécnica de Madrid (1999-2003).</li>
+                    <li><strong>Cursos Relacionados con Informática de Gestión:</strong>
+                        <ul>
+                            <li>Curso de Docker para Desarrolladores - OpenWebinars (2024)</li>
+                            <li>Curso de Git - OpenWebinars (2024)</li>
+                            <li>Programación de Aplicaciones de Gestión (3 años de duración)</li>
+                            <li>Sistemas Operativos (70 horas)</li>
+                            <li>Diseño de páginas web (60 horas)</li>
+                            <li>Programación Orientada a Objetos (150 horas)</li>
+                            <li>Diseño y explotación de Bases de Datos Microsoft Access y resto de Paquete Microsoft
+                                Office: Excel, PowerPoint, Word (300 horas)</li>
+                            <li>Bases de datos Oracle (300 horas)</li>
+                            <li>Cursos de Base de Datos Microsoft Access 2013 y Microsoft Powerpoint 2013</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Idiomas -->
+        <div class="card">
+            <div class="card-header">Idiomas</div>
+            <div class="card-body">
+                <p>Inglés: Cambridge English First Certificate: Grade B (Council of Europe Level B2), obtenido en julio
+                    de 2019.</p>
+            </div>
+        </div>
+
+        <!-- Otra Formación -->
+        <div class="card">
+            <div class="card-header">Otra Formación</div>
+            <div class="card-body">
+                <ul>
+                    <li>Curso de Especialista en Gestión Administrativa de Ensayos Clínicos, Instituto Fundación Teófilo
+                        Hernando I+D del Medicamento, realizado en septiembre de 2018.</li>
+                    <li>Curso de Empleado de oficina (400 horas), incluyendo el estudio del Paquete Microsoft Office
+                        (Excel y Access).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Experiencia Laboral -->
+        <div class="card">
+            <div class="card-header">Experiencia Laboral</div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Septiembre 2023 – Actualidad:</strong> Cursando Ciclo Formativo de Grado Superior en
+                        Desarrollo de Aplicaciones Web en el IES Luis Vives de Leganés (Madrid).</li>
+                    <li><strong>Febrero 2021 – Noviembre 2023:</strong> Instituto Fundación Teófilo Hernando I+D del
+                        Medicamento. Clinical Trial Assistant (Especialista en Gestión Administrativa de Ensayos
+                        Clínicos)
+                        <ul>
+                            <li>Labores administrativas propias del puesto.</li>
+                            <li>Contratos con Promotores y Centros Participantes.</li>
+                            <li>Coordinación de Personal (CTAs).</li>
+                            <li>Labores de Gestión y Coordinación de ensayos clínicos.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Octubre 2018 - Diciembre 2020:</strong> Secretaría Comité de Ética de la Investigación
+                        con Medicamentos del Hospital U. de La Princesa.
+                        <ul>
+                            <li>Labores administrativas propias del puesto.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Abril 2016 - diciembre 2017:</strong> Unidad Técnica de la Fundación de Investigación
+                        Biomédica del Hospital U. 12 de Octubre.
+                        <ul>
+                            <li>Labores administrativas propias del puesto.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Julio 2012 - marzo 2016:</strong> Unidad Técnica de la Fundación de Investigación
+                        Biomédica del Hospital U. de La Princesa. Gestor de Proyectos y Ensayos Clínicos
+                        <ul>
+                            <li>Labores administrativas propias del puesto.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Julio 2009 - Junio 2012:</strong> Unidad de Apoyo del Instituto de Investigación
+                        Sanitaria del Hospital U. de La Princesa (IIS). Gestor de apoyo para la Acreditación del IIS
+                        <ul>
+                            <li>Apoyo en la generación y gestión de la documentación requerida para la Acreditación del
+                                Hospital U. de La Princesa como Instituto de Investigación Sanitaria, concedida en el
+                                año 2010.</li>
+                        </ul>
+                    </li>
+                    <li><strong>2005-2008:</strong> Hospital Universitario de La Princesa y sus Centros de
+                        Especialidades.
+                        <ul>
+                            <li>Labores de Auxiliar Administrativo en distintos servicios y centros adscritos.</li>
+                        </ul>
+                    </li>
+                    <li><strong>2002:</strong> Freelance
+                        <ul>
+                            <li>Análisis, desarrollo e instalación de aplicación para la transmisión y gestión posterior de incidencias desde la Sección de 
+                                Recogida de Residuos Urbanos del Ayuntamiento de Madrid a la empresa CastellanaPO UTE (Plastic Omnium - Fomento de Construcciones y Contratas).</li>
+                        </ul>
+                    </li>                    <li><strong>2000-2002:</strong> Grupo Fomento de Construcciones y Contratas (FCC S.A.) Programador
+                        de Aplicaciones de Gestión
+                        <ul>
+                            <li>Análisis, desarrollo e instalación de sistemas de información geográfica (GIS) para el
+                                seguimiento y gestión de flotas de transportes, utilizando tecnología GPS. Proyectos
+                                destacados:
+                                <ul>
+                                        <li>Proyecto piloto de seguimiento y comunicaciones realizado para la Policía Municipal de Madrid.</li>
+                                        <li>Sistema de Información Geográfica para la Policía Municipal de Talavera de la Reina (Toledo).</li>
+                                        <li>Control y seguimiento de la flota de la empresa MATINSA S.A. en Tenerife. Sistema de control y seguimiento de la flota de recogida selectiva de residuos sólidos de Madrid.</li>
+                                        <li>Control y seguimiento de la flota de vehículos quitanieves de la empresa MATINSA S.A. en Madrid. </li>
+                                        <li>Sistema de Ayuda a la Explotación (SAE) de la empresa concesionaria del transporte urbano de Vitoria (Álava) para el control y seguimiento de la flota de autobuses.</li>
+                                        <li>Sistema de Ayuda a la Explotación (SAE) de la empresa concesionaria del transporte urbano de Ávila para el control y seguimiento de la flota de autobuses.</li>
+                                        <li>Análisis, desarrollo e instalación de un sistema para la transmisión y gestión posterior de incidencias desde la Sección de Recogida de Residuos Urbanos del Ayuntamiento de Madrid a la empresa CastellanaPO UTE (Plastic Omnium - Fomento de Construcciones y Contratas).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>1999:</strong> Asociación Nacional de Filatelia de España (ANFIL). Programador de
+                        Aplicaciones de Gestión.
+                        <ul>
+                            <li>Análisis y desarrollo de Aplicación de gestión de afiliados (Base de Datos Access y
+                                Visual Basic).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>- 2024 -</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

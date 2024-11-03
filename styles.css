@@ -1,0 +1,77 @@
+/* Estilo de la cabecera */
+.header {
+    position: relative;
+    background-image: url("./images/thomas-tastet-hSODeSbvzE0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    color: white;
+}
+
+.header .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.avatar {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 4em;
+    font-weight: bold;
+    color: #ece79c;
+    text-align: center;
+}
+
+/* Estilos de la introducción */
+.introduccion p {
+    font-size: 1.2em;
+    color: #dcdcd5;
+}
+
+/* Estilo para las tecnologías */
+.technologies img {
+    margin: 8px;
+    transition: transform 0.3s;
+    filter: grayscale(100%);
+}
+
+.technologies img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.8rem;
+}
+
+/* Fondo negro para el body */
+body {
+    background-color: #000;
+    color: #fff; /* Color de texto en blanco para mejor legibilidad */
+}
+
+/* Fondo negro para el footer */
+footer {
+    background-color: #000;
+    color: #fff; /* Color de texto en blanco */
+    padding: 20px 0;
+}
+
+/* Ajuste de color en los títulos */
+footer h2 {
+    color: #fff; /* Asegura que el título del footer sea blanco */
+}
+
