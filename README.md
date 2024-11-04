@@ -50,6 +50,8 @@ Debemos configurar varios apartados del despliegue. En este caso únicamente
 el nombre del sitio (por el que luego podremos acceder a nuestra página en Netlify) y la rama que se desplegará.
 
 En mi caso la página de Netlify es: https://germangfc.netlify.app y la rama elegida la ***main***.
+
+
 <img src="./capturas/09ok.png" max-width="80%">
 
 <img src="./capturas/10.png" max-width="80%">
